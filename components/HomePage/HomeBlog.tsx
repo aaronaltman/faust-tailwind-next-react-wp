@@ -17,11 +17,12 @@ export default async function Home() {
     category:string,
     href:string,
     content:string,
+    excerpt:string,
   }
 
   const { data } = await client.query({
     query: gql`
-    query GetPosts {
+    query GetFirstSixPosts {
   posts(first: 6) {
     nodes {
       author {
@@ -44,6 +45,7 @@ export default async function Home() {
         }
       }
       title
+      excerpt
     }
   }
 }
@@ -82,7 +84,7 @@ export default async function Home() {
                       {post.title}
                     </a>
                   </h3>
-                  <p className="mt-5 prose line-clamp-3 text-sm leading-6 text-gray-600">{post.content}</p>
+                <div className="mt-5 line-clamp-4 text-sm leading-6 text-gray-600">{post.excerpt}</div>
                 </div>
               </div>
             </article>
