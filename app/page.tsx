@@ -7,7 +7,6 @@ export default function Home() {
    <>
    <Header/>
    <div className='bg-white'>
-   <h1 className='text-center'>New Page Alert</h1>
    <HomeBlog/>
    </div>
    </>
