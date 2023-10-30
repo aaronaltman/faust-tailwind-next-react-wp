@@ -84,7 +84,6 @@ export default async function Home() {
                       {post.title}
                     </a>
                   </h3>
-                <div className="mt-5 line-clamp-4 text-sm leading-6 text-gray-600">{post.excerpt}</div>
                 </div>
               </div>
             </article>
