@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@faustjs/core": "^0.15.10",
+    "@faustjs/next": "^0.15.12",
     "@faustwp/blocks": "^2.0.0",
     "@faustwp/cli": "^1.2.0",
     "@faustwp/core": "^1.2.0",
